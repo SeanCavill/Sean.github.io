@@ -1,0 +1,48 @@
+@media (min-width: 2px){
+    /*Sets background to blue*/
+    body{
+        background-color: #355EA1;
+    }
+    
+    /* changes attributes of header 1 tag */
+    h1{
+        font-family: Helvetica;
+        text-align: center;
+        font-size: 80px;
+        color: #1F1F1F;
+    
+    }
+    
+    /* changes attributes of header 2 tag */
+    h2{
+        font-family: Courier;
+        font-size: 50px;
+    }
+    
+    /* changes attributes of texts within paragraphs*/
+    p{
+        font-family: Arial;
+        font-size: 30px;
+        color: #1F1F1F;
+    }
+    
+    /*styling for the main div class*/
+    .main{
+        text-align: center;
+        Width: 100%;
+    }
+    
+    /*styling for the content div class within main*/
+    .content{
+        background-color: #4675C4;
+        text-align: center;
+        position: relative;
+        padding: 2% 10%;
+        margin: 2% 5%;
+    }
+    
+    /*styling for pingu image ID*/
+    #pingu{
+        width: 20%;
+    }
+    }
