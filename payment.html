@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css ">
+
+        <!-- Creates navigation container-->
+        <div class ="navigation">
+
+            <!-- text hyper links to different pages-->
+            <div class ="navtext">
+                <a href="index.html">Home</a>
+                <a href="shop.html">Shop</a>
+                <a href="payment.html">Payment</a>
+
+            </div>
+                <!-- hyper linked account icon that goes to the accounts page-->
+                <a href="account.html"><img src="img/account.png" alt="Login/Logout"></a>
+                         
+        </div>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+
+        <body>
+            
+    
+            <div class="main">
+                <script src="index.js" async defer></script>      
+    
+                <div class="content">
+                    <!--header text-->
+                    <h1>Payment</h1>
+                    
+                    <!--creating form that the user can input into!-->
+                    <div class="form">
+                    <form>
+                    
+
+                        <h2>Customer Details</h2>
+
+                        <!--Creates a label with text and an input box in it. Input box is a text type box, the id is for CSS, the name is used by the form as a variable, 
+                        max length and size determines width of text box and the maximum amount of characters allowed. Placeholder is placeholder text before the user types anything.-->
+                        <label>Full Name*
+                            <input type="text" id="name" name="name" maxlength="30" size="30" placeholder="Full Name">
+                        </label>
+                        
+                        <br>
+
+                        <!--Using text area so the user canfill out as many address lines as needed-->
+                        <label>Address*
+                            <textarea name="address" rows="5" cols="30" wrap="soft" placeholder="Address"></textarea>
+                        </label>
+
+                        <br>
+
+                        <label>Phone Number*
+                            <input type="text" id="phoneNumber" name="phone"  maxlength="30" size="30" placeholder="Phone Number">
+                        </label>
+                        
+                        <br>
+
+                        <label>Email Address*
+                            <input type="text" id="email" name="email" maxlength="30" size="30" placeholder="Email Address">
+                        </label>
+                        
+                        <br>
+
+                        <h2>Card Details</h2>
+                        
+                        <label>First Name
+                            <input type="text" id="fname" name="fname" placeholder="First Name">
+                        </label>
+                        <br>
+                        <label>Last Name
+                            <input type="text" id="lname" name="lname" placeholder="Last Name">
+                        </label>
+                        
+                        
+                        <br>
+                        <label>Card Number
+                            <input type="text" id="cNumber" name="cNumber" maxlength="20" size="20" placeholder="Card Number">
+                        </label>
+                        
+                        <br>
+                        <label>CVC
+                            <input type="text" id="cvc" name="cvc" maxlength="3" size="3" placeholder="CVC">
+
+                        </label>
+                        
+                        <br>
+                        <!--using date which is a date picked the user can pick from-->
+                        <label>Expiration Date
+                            <input type="date" id="expDate" name="expDate">
+                        </label>
+                        
+                        <br>
+                        <!--submit button which submits the data on the form-->
+                        <input type="submit" value="Submit">
+
+
+                    </form>
+                </div>
+                </div>
+    
+            </div>
+        </body>
+    </html>
+    </body>
+</html>

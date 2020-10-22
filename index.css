@@ -1,48 +1,161 @@
+
 @media (min-width: 2px){
+
+}
+                     
     /*Sets background to blue*/
-    body{
-        background-color: #355EA1;
+body{
+        background-color: #EEEEEE;
     }
+
+
+/* Add a black background color to the top navigation */
+.navigation {
+    background-color: #BBBBBB;
+    border-style: solid;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1vw 2vw;
+    text-align: center;
+
+
+  }
+
+  /* makes the navigation content stay on one line */
+  .navtext{
+    display: inline-flex;
     
-    /* changes attributes of header 1 tag */
-    h1{
-        font-family: Helvetica;
-        text-align: center;
-        font-size: 80px;
-        color: #1F1F1F;
+    
+  }
+
+  /* used to format the account image and set it to the right of the navbar. */
+  .navigation img {
+    float: right;
+    padding-right: 5vw;
+    max-height:3vw;
+
+}
+  
+  /* creates borders around all hyper links in navbar and customizes text. */
+  .navtext a{ 
+    border-style: solid;
+    border-radius: 10px;
+    color: #000000;
+    font-family: calibri;
+    font-size: 3vw;
+    text-decoration: none;
+    padding: 0vw 1vw;
+    margin-right:2vw;
+
+  }
+
+  /* Change the color of the hypertext links when hovered with the mouse */
+  .navigation a:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+/* alligns main container in the center of the page */
+  .content{
+      text-align: center;
+  }
+
+/* changing styles for headers and paragraphs text*/
+h1{
+    font-family: Arial;
+    font-size: 75px;
+    margin: 2vw;
+}
+
+h2{
+    font-family: Arial;
+    font-size: 50px;
+    margin: 2vw;
+}
+
+p{
+    font-family: Arial;
+    font-size: 20px;
+
+}
+
+/*Used to align the images with the row class */
+.row{
+    display: flex;
+    flex-wrap: wrap;  
+    border-style: solid;
+    color: #000;
+    text-align: center;
+
+}
+
+/*used to determine the amount of columns of images and the image size */
+.column {
+    flex: 20%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+  
+/* adds border and sizing to images */
+.column img {
+    border-radius: 10%;
+    border-style: solid;
+    color: #CCCCCC;
+    margin-top: 8px;
+    width: 100%;
+}
+
+/*style for form items */
+input[type=text], textarea, input[type=date], input[type=password]{
+
+    margin-bottom: 20px;
+    margin-top: 1px;
+    padding: 10px;
+    border-radius:5px;
     
     }
-    
-    /* changes attributes of header 2 tag */
-    h2{
-        font-family: Courier;
-        font-size: 50px;
+
+
+/*padding for form container */
+.form{
+    padding: 1vw 20vw;
+
+}
+/* font-sizing for all labels on the forms */
+.form label {
+    width: 100%;
+    font-size: 20px;
+
+  }
+/* alligns address label with the textarea */
+label textarea{
+    vertical-align: middle;
+}
+
+/* style for submit buttons on form */
+input[type=submit]{
+    background-color: #999999;
+    border: none;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/*changes sizing when screen is below 1000px(makes two columns of images in shop */
+@media screen and (max-width: 1000px) {
+    .column {
+      flex: 40%;
+      max-width: 50%;
     }
-    
-    /* changes attributes of texts within paragraphs*/
-    p{
-        font-family: Arial;
-        font-size: 30px;
-        color: #1F1F1F;
-    }
-    
-    /*styling for the main div class*/
-    .main{
-        text-align: center;
-        Width: 100%;
-    }
-    
-    /*styling for the content div class within main*/
-    .content{
-        background-color: #4675C4;
-        text-align: center;
-        position: relative;
-        padding: 2% 10%;
-        margin: 2% 5%;
-    }
-    
-    /*styling for pingu image ID*/
-    #pingu{
-        width: 20%;
-    }
+}
+
+/*changes sizing when screen is below 600px makes shop into one column of images*/
+@media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
     }
