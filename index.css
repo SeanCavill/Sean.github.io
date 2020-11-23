@@ -106,7 +106,7 @@ p{
 }
 
 /*style for form items */
-input[type=text], textarea, input[type=date], input[type=password]{
+input{
 
     margin-bottom: 20px;
     margin-top: 1px;
@@ -117,7 +117,7 @@ input[type=text], textarea, input[type=date], input[type=password]{
 
 
 /*padding for form container */
-.form{
+.login{
     padding: 1vw 20vw;
 
 }
@@ -133,7 +133,7 @@ label textarea{
 }
 
 /* style for submit buttons on form */
-input[type=submit]{
+button{
     background-color: #999999;
     border: none;
     color: #fff;
@@ -143,6 +143,12 @@ input[type=submit]{
     cursor: pointer;
 }
 
+button:hover{
+  background: #AAAAAA;
+  color: #5d8ffc;
+  border: 1px solid #5d8ffc;
+  cursor: pointer;
+}
 
 /*changes sizing when screen is below 1000px(makes two columns of images in shop */
 @media screen and (max-width: 1000px) {

@@ -38,36 +38,45 @@
         <body>
     
             <div class="main">
-                <script src="index.js" async defer></script>      
-    
+                
                 <div class="content">
-                    <div class="form">
-                        <form>
-                        
-                            <h2>Login/Register</h2>
+                    <div class="login" id="login_div">
+                        <h2>Login/Register</h2>
     
                             <label>User Name
-                                <input type="text" id="name" name="name" maxlength="30" size="30" placeholder="User Name">
+                                <input type="email" id="email" maxlength="30" size="30" placeholder="Email">
                             </label>
                             
                             <br>
     
                             <label>Password
-                                <input type="password" id="name" name="name" maxlength="30" size="30" placeholder="Password">
+                                <input type="password" id="password" maxlength="30" size="30" placeholder="Password">
                             </label>
                         
                             
                             <br>
-                            <input type="submit" name="login" value="Log-In">
-                            <input type="submit" name="register" value="Sign-up">
-    
-    
-                        </form>
+                            <button onclick="login()">Login</button>
+                            <button onclick="signUp()">Sign up</button>
+                        
+                          
+                        
                     </div>
+                    <div id="user_div">
+                        <h3>You are currently logged in</h3>
+                        <p id="user_email">You are currently logged in. Click below to log out</p>
+                        <button onclick="logout()">Logout</button>
+                      </div>
                     
                 </div>
     
             </div>
+
+            <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+                        
+                          <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+                          <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+                          <script src="index.js"></script>
+
         </body>
     </html>
     </body>
