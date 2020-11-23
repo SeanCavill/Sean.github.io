@@ -149,6 +149,17 @@ button:hover{
   border: 1px solid #5d8ffc;
   cursor: pointer;
 }
+.cart p{
+  text-emphasis: bold;
+}
+.cart img{
+    vertical-align:middle;
+    border-radius: 10%;
+    border-style: solid;
+    color: #CCCCCC;
+    width: 5%;
+    margin: 5px;
+}
 
 /*changes sizing when screen is below 1000px(makes two columns of images in shop */
 @media screen and (max-width: 1000px) {
